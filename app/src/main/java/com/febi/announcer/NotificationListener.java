@@ -44,7 +44,7 @@ public class NotificationListener extends NotificationListenerService implements
         Location location   = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
         boolean isAtOffice  = false;
         if(location != null) {
-            Location officeLocation         = new Location("");
+            Location officeLocation         = new Location("");//My office Location
             officeLocation.setLatitude(10.0177998);
             officeLocation.setLongitude(76.3043092);
 
