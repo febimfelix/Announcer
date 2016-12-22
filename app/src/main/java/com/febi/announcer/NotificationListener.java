@@ -56,6 +56,7 @@ public class NotificationListener extends NotificationListenerService implements
             }
         }
 
+        //Don' speak while on a call or at office
         if(state != TelephonyManager.CALL_STATE_OFFHOOK && !isAtOffice) {
             String packageName = sbn.getPackageName();
 
